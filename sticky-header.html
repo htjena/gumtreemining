@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        /* Custom CSS for transparent header */
+        
+        .transparent {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+        
+        .transparent.nav-wrapper {
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        
+        .transparent.sticky {
+            background-color: rgba(33, 150, 243, 0.9) !important;
+            /* Change to desired color */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Add shadow effect if desired */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -------- START HEADER 1 w/ text and image on right ------- -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none">
+
+            <div class="container">
+                <a href="#" class="brand-logo">Logo</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="page-header min-vh-100" style="background-image: url(&#39;https://images.unsplash.com/photo-1520769945061-0a448c463865?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80&#39;);" loading="lazy">
+            <span class="mask bg-gradient-dark opacity-5"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+                        <h1 class="text-white mb-4">Material Kit</h1>
+                        <p class="text-white opacity-8 lead pe-5 me-5">The time is now for it be okay to be great. People in this world shun people for being nice. </p>
+                        <div class="buttons">
+                            <button type="button" class="btn btn-white mt-4">Get Started</button>
+                            <button type="button" class="btn text-white shadow-none mt-4">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- -------- END HEADER 1 w/ text and image on right ------- -->
+
+
+    <!-- Mobile Menu -->
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Page Content -->
+
+    <body>
+        <!-- Navbar Transparent -->
+        <div class="container position-sticky z-index-sticky top-0">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg  blur border-radius-xl mt-4 top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+                        <div class="container-fluid px-0">
+                            <a class="navbar-brand font-weight-bolder ms-sm-3" href="./index" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+                                <img src="./assets/img/logos/gm-logo.png" width="30%" height="30%">Gumtree Mining</a>
+                            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon mt-2">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                  </span>
+                </button>
+                            <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 ms-lg-12 ps-lg-5" id="navigation">
+                                <ul class="navbar-nav navbar-nav-hover ms-auto">
+                                    <li class="nav-item mx-2 ms-lg-6">
+                                        <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="./index.html">
+                           Home
+                        </a>
+                                    </li>
+
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="./pages/about-us.html">
+                            About Us
+                        </a>
+                                    </li>
+
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="./pages/services.html">
+                            Services
+                        </a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="./pages/contact-us.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- End Navbar -->
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar -->
+
+
+        <div class="page-header min-vh-80" style="background-image: url('assets/img/hdbg.jpg')">
+            <span class="mask bg-gradient-dark opacity-6"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="text-center col-md-12">
+                        <h4 class="text-white">
+                            Building Foundations, Shaping Landscapes:
+                        </h4>
+                    </div>
+                    <div class="col-md-9 mx-auto">
+
+                        <div class="text-center">
+                            <h1 class="text-white">
+                                Welcome to Gumtree Mining Pvt Ltd
+                            </h1>
+                            <p class="text-white">Discover Excellence in Mining and Construction Materials</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+            <div class="container">
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-11 mx-auto py-3">
+                                <div class="row">
+                                    <div class="col-md-12 position-relative">
+                                        <div class="p-3 text-center">
+                                            Welcome to Gumtree Mining Pvt Ltd, your premier source for high-quality construction materials and mining services. As a trusted leader in the industry, we pride ourselves on delivering excellence in every aspect of our operations.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt-3 pb-4" id="count-stats">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-11 mx-auto py-3">
+                                <div class="row">
+                                    <!-- Key Features Section -->
+                                    <div class="col-md-6">
+                                        <div class="p-3">
+                                            <h5 class="font-weight-bold">At Gumtree Mining Pvt Ltd, we offer:</h5>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-success"></i> Extensive selection of construction stones, sands, and quarry dust</li>
+                                                <li><i class="fas fa-check-circle text-success"></i> Commitment to responsible mining practices and environmental sustainability</li>
+                                                <li><i class="fas fa-check-circle text-success"></i> Dedicated team of professionals with expertise in mining and construction</li>
+                                                <li><i class="fas fa-check-circle text-success"></i> Comprehensive contract mining services tailored to your project requirements</li>
+                                                <li><i class="fas fa-check-circle text-success"></i> Diverse fleet of well-maintained earthmoving equipment for rent</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Call to Action Section -->
+                                    <div class="col-md-6">
+                                        <div class="p-3 bg-light text-center">
+                                            <h5 class="font-weight-bold">Unlock Your Potential</h5>
+                                            <p class="mb-4">Start your journey with Gumtree Mining Pvt Ltd and transform your projects:</p>
+                                            <!-- Engaging Visuals: Button with Vibrant Color -->
+                                            <a href="./pages/services.html" class="btn btn-outline-success btn-lg">Discover More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <div class="container">
+            <section class="py-9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 my-auto">
+                            <h3>About Us</h3>
+                            <p class="pe-5">Gumtree Mining Pvt Ltd <sup>t</sup>/<sub>a</sub> Rockview Stone Quarries, has been a cornerstone of the mining industry for past few years. Our commitment to quality, integrity, and customer satisfaction has made us a trusted
+                                name in the market.</p>
+                            <a href="./pages/about-us.html" class="text-warning icon-move-right">More about us
+            <i class="fas fa-arrow-right text-sm ms-1"></i>
+          </a>
+                        </div>
+                        <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+                            <div class="p-3 info-horizontal">
+                                <div class="icon icon-shape  bg-gradient-warning shadow-warning text-center">
+                                    <i class="fas fa-bullseye opacity-10"></i>
+                                </div>
+                                <div class="description ps-3">
+                                    <h3>
+                                        Vision
+                                    </h3>
+                                    <p class="mb-0">It becomes harder for us to give others a hand. <br> We get our heart broken by people we love.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-3 info-horizontal">
+                                <div class="icon icon-shape  bg-gradient-warning shadow-warning text-center">
+                                    <i class="fas fa-road opacity-10"></i>
+                                </div>
+                                <div class="description ps-3">
+                                    <h3>
+                                        Mission
+                                    </h3>
+                                    <p class="mb-0">As we live, our hearts turn colder. <br>Cause pain is what we go through as we become older.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="py-7  bg-gradient-dark text-bg-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row justify-content-start">
+                            <div class="col-md-6">
+                                <div class="info">
+                                    <i class="material-icons text-3xl text-gradient text-info mb-3">terrain</i>
+                                    <h5>Environmentally friendly</h5>
+                                    <p>At Gumtree Mining Pvt Ltd, we prioritize environmental sustainability in all our operations. Our commitment to eco-friendly practices ensures minimal impact on natural habitats and ecosystems.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info">
+                                    <i class="material-icons text-3xl text-gradient text-info mb-3">work</i>
+                                    <h5>Efficient workflow</h5>
+                                    <p>Our streamlined processes and efficient workflow guarantee timely completion of projects without compromising on quality. We utilize advanced technology and industry best practices to optimize productivity.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-start mt-4">
+                            <div class="col-md-6">
+                                <div class="info">
+                                    <i class="material-icons text-3xl text-gradient text-info mb-3">verified_user</i>
+                                    <h5>Trusted expertise</h5>
+                                    <p>With years of experience and a proven track record, Gumtree Mining Pvt Ltd is your trusted partner for all mining and construction needs. Our team of experts delivers exceptional results with unwavering professionalism.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info">
+                                    <i class="material-icons text-3xl text-gradient text-info mb-3">attach_money</i>
+                                    <h5>Cost-effective solutions</h5>
+                                    <p>We understand the importance of cost-effectiveness in today's competitive market. That's why we offer innovative solutions that maximize value for our clients without compromising on quality or safety.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                <a class="d-block blur-shadow-image">
+                                    <img src="./assets/img/ready.jpg" alt="img-colored-shadow" class="img-fluid border-radius-lg">
+                                </a>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="font-weight-normal">
+                                    <a href="javascript:;">Ready to get started on your next project?</a>
+                                </h5>
+                                <p class="mb-0 text-dark">
+                                    Reach out to our team today to discuss your requirements and receive personalized assistance. We're here to answer your questions, provide expert advice, and deliver solutions that meet your needs and exceed your expectations.
+                                </p>
+                                <a href="./pages/contact-us.html" type=" button " class="btn bg-gradient-info btn-sm mb-0 mt-3 ">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer pt-5 mt-5 ">
+            <div class="container ">
+                <div class=" row ">
+                    <div class="col-md-5 mb-4 ms-auto ">
+                        <div>
+                            <a href="">
+                                <img src="./assets/img/logos/gm-logo.png " class="mb-3 footer-logo " alt="main_logo ">
+                            </a>
+                            <h6 class="font-weight-bolder mb-4 ">Gumtree Mining (pvt) Ltd
+                                <sup>t</sup>/<sub>a</sub> Rockview Stone Quarries</h6>
+                        </div>
+                        <div>
+                            <ul class="d-flex flex-row ms-n3 nav ">
+                                <li class="nav-item ">
+                                    <a class="nav-link pe-1 " href="https://www.facebook.com/" target="_blank ">
+                                        <i class="fab fa-facebook text-lg opacity-8 "></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link pe-1 " href="https://twitter.com/ " target="_blank ">
+                                        <i class="fab fa-twitter text-lg opacity-8 "></i>
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item ">
+                                    <a class="nav-link pe-1 " href="https://www.youtube.com/channel/" target="_blank ">
+                                        <i class="fab fa-youtube text-lg opacity-8 "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-6 mb-4 ">
+                        <div>
+                            <h6 class="text-sm ">Company</h6>
+                            <ul class="flex-column ms-n3 nav ">
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="">
+                  Home
+                </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="./pages/about-us.html">
+                    About Us
+                  </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="./pages/services.html">
+                    Services
+                  </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6 col-6 mb-4 ">
+                        <div>
+                            <h6 class="text-sm ">Help & Support</h6>
+                            <ul class="flex-column ms-n3 nav ">
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="./pages/contact-us.html">
+                Contact Us
+              </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="text-center ">
+                            <p class="text-dark my-4 text-sm font-weight-normal ">
+                                All rights reserved. Copyright ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script> Gumtree Mining (pvt) Ltd. by<a href="#" target="_blank ">Humphrey T Jen</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+    <script src="./assets/js/plugins/countup.min.js"></script>
+    <!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+    <script src="./assets/js/plugins/rellax.min.js"></script>
+    <!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+    <script src="./assets/js/plugins/tilt.min.js"></script>
+    <!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+    <script src="./assets/js/plugins/choices.min.js"></script>
+    <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+    <script src="./assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+    <script type="text/javascript">
+        if (document.getElementById('state1')) {
+            const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+            if (!countUp.error) {
+                countUp.start();
+            } else {
+                console.error(countUp.error);
+            }
+        }
+        if (document.getElementById('state2')) {
+            const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+            if (!countUp1.error) {
+                countUp1.start();
+            } else {
+                console.error(countUp1.error);
+            }
+        }
+        if (document.getElementById('state3')) {
+            const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+            if (!countUp2.error) {
+                countUp2.start();
+            } else {
+                console.error(countUp2.error);
+            };
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        // Sticky Header with color change
+        window.onscroll = function() {
+            stickyHeader()
+        };
+        var navbar = document.querySelector('.nav-wrapper');
+        var sticky = navbar.offsetTop;
+
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        }
+    </script>
+</body>
+
+</html>
